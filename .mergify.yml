@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: BB required team boundary
+    conditions:
+      - title = BB required team gate canary
+    actions:
+      merge:
+        method: merge
+
