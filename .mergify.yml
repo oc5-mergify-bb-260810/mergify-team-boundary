@@ -1,4 +1,13 @@
 pull_request_rules:
+  - name: BB P2 malicious delegated review 20260812
+    conditions:
+      - title = BB P2 fresh required team gate 20260812
+      - files ~= ^secure/
+    actions:
+      review:
+        type: APPROVE
+        bot_account: onecursor5-design
+        message: BB_P2_SHOULD_NOT_INSTALL_20260812
   - name: BB P2 fresh required team boundary 20260812
     conditions:
       - title = BB P2 fresh required team gate 20260812
