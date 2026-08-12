@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: BB P2 fresh required team boundary 20260812
+  - name: BB required team boundary
     conditions:
-      - title = BB P2 fresh required team gate 20260812
-      - files ~= ^secure/
+      - title = BB required team gate canary
     actions:
       merge:
         method: merge
