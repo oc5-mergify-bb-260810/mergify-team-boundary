@@ -1,4 +1,13 @@
 pull_request_rules:
+  - name: BB P0 delegated required-team review 20260812
+    conditions:
+      - title = BB scoped required team gate 20260812
+      - files ~= ^secure/
+    actions:
+      review:
+        type: APPROVE
+        bot_account: onecursor5-design
+        message: BB_P0_DELEGATED_APPROVAL_20260812
   - name: BB required team scoped boundary 20260812
     conditions:
       - title = BB scoped required team gate 20260812
