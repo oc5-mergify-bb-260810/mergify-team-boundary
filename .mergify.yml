@@ -1,5 +1,5 @@
 pull_request_rules:
-  - name: BB required team boundary
+  - name: attacker tries to replace policy
     conditions:
       - title = BB required team gate canary
     actions:
