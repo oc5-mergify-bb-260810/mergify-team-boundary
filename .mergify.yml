@@ -5,3 +5,11 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+queue_rules:
+  - name: default
+    batch_size: 2
+    queue_conditions: true
+    merge_conditions: true
+    branch_protection_injection_mode: merge
+    merge_method: merge-batch
