@@ -5,11 +5,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-  - name: BB merge-bot current permission boundary
-    conditions:
-      - title = BB merge bot current permission gate
-    actions:
-      merge:
-        method: merge
-        merge_bot_account: onecursor6-oss
