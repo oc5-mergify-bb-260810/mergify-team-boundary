@@ -9,7 +9,7 @@ pull_request_rules:
 queue_rules:
   - name: default
     batch_size: 2
-    batch_max_wait_time: 10 seconds
+    batch_max_wait_time: 1 minute
     queue_conditions: true
     merge_conditions: []
     merge_method: merge-batch
